@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorBlack"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Nombre: "
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvTextName"
+            android:text="Nombre: "
+            android:textColor="@color/colorYellow"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTextHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/tvTextName"
+            android:text="Estatura: "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextName"
+            android:layout_toRightOf="@+id/tvTextHeight"
+            android:text="Nombre: "
+            android:textColor="@color/colorYellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTextEyeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/tvTextHeight"
+            android:text="Color Ojos: "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvEyeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextHeight"
+            android:layout_toRightOf="@+id/tvTextEyeColor"
+            android:text="Nombre: "
+            android:textColor="@color/colorYellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTextBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/tvEyeColor"
+            android:text="Fecha Nacimiento: "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEyeColor"
+            android:layout_toRightOf="@+id/tvTextBirth"
+            android:text="Nombre: "
+            android:textColor="@color/colorYellow"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
