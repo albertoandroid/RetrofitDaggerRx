@@ -17,6 +17,7 @@
         <activity android:name=".RetrofitActivity" />
         <activity android:name=".DaggerActivity" />
         <activity android:name=".DaggerOrdenadoActivity" />
+        <activity android:name=".RxActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

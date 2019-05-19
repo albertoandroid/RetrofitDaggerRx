@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btDagger;
     Button btDaggerOrdenado;
     Button btRxBasico;
+    Button btRxActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), RxBaseActivity.class));
+
+            }
+        });
+
+        btRxActivity = findViewById(R.id.btRxActivity);
+        btRxActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RxActivity.class));
 
             }
         });

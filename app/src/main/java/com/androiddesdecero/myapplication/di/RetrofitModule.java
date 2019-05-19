@@ -9,6 +9,7 @@ import dagger.Provides;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
@@ -36,10 +37,17 @@ public class RetrofitModule {
 
     @Singleton
     @Provides
-    Retrofit provideRetrofit(OkHttpClient client, GsonConverterFactory gsonConverterFactory){
+    RxJava2CallAdapterFactory providesRxJava2CallAdapterFactory(){
+        return RxJava2CallAdapterFactory.create();
+    }
+
+    @Singleton
+    @Provides
+    Retrofit provideRetrofit(OkHttpClient client, GsonConverterFactory gsonConverterFactory, RxJava2CallAdapterFactory rxJava2CallAdapterFactory){
         return new Retrofit.Builder()
                 .baseUrl("https://swapi.co/api/")
                 .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(rxJava2CallAdapterFactory)
                 .client(client)
                 .build();
     }

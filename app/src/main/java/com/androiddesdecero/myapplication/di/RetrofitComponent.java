@@ -2,6 +2,7 @@ package com.androiddesdecero.myapplication.di;
 
 import com.androiddesdecero.myapplication.DaggerActivity;
 import com.androiddesdecero.myapplication.DaggerOrdenadoActivity;
+import com.androiddesdecero.myapplication.RxActivity;
 
 import javax.inject.Singleton;
 
@@ -12,4 +13,6 @@ import dagger.Component;
 public interface RetrofitComponent {
     void inject(DaggerActivity daggerActivity);
     void inject(DaggerOrdenadoActivity daggerOrdenadoActivity);
+
+    void inject(RxActivity rxActivity);
 }
