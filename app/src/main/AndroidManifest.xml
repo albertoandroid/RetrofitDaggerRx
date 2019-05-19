@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androiddesdecero.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".di.BaseApplication"
@@ -12,12 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RetrofitOrdenadoActivity"></activity>
+        <activity android:name=".RxBaseActivity"></activity>
+        <activity android:name=".RetrofitOrdenadoActivity" />
         <activity android:name=".RetrofitActivity" />
         <activity android:name=".DaggerActivity" />
-        <activity android:name=".DaggerOrdenadoActivity"></activity>
-
-
+        <activity android:name=".DaggerOrdenadoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
