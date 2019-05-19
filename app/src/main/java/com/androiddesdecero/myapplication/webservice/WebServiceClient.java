@@ -17,4 +17,7 @@ public interface WebServiceClient {
 
     @GET("people")
     Observable<Data> getPersonajesObservable();
+
+    @GET()
+    Observable<Data> getPersonajesObservable(@Url String url);
 }
